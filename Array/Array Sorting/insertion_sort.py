@@ -2,10 +2,10 @@
 def insertionSort(arr):
     n = len(arr)
     for i in range(1,n):
-        key = arr[i]
-        j = i-1
+        key = arr[i]     # i is starting from 1st index
+        j = i-1          # j is starting from 0th index
 
-        while j >= 0 and key < arr[j]:
+        while j >= 0 and key < arr[j]:    #For comparing the two adjacent positions
             arr[j+1] = arr[j]
             j -= 1
         arr[j+1] = key
